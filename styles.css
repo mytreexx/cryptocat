@@ -1,0 +1,185 @@
+/* 
+dark purple: #2A1541;
+accent pink: #ff00ff;
+accent aqua: #1aecff;
+accent lavender: #798aff;
+terminal green: #4AF626;
+ */
+
+html {
+    background-color: #2A1541;
+}
+
+img {
+    height: 150px;
+    margin: 10px;
+}
+
+.bg-purple {
+    background-color: #2A1541;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, #2A1541 0%, #000000 100%);
+}
+
+h1 {
+    color: white;
+    padding-left: 30px;
+}
+
+.search {
+    display: flex;
+}
+
+input {
+    margin-right: 8px;
+    border-radius: 0.2em;
+    outline: none;
+    border: none;
+}
+
+.coin-card {
+    background: linear-gradient(349deg, rgba(56, 28, 85, 1) 29%, rgba(42, 21, 65, 1) 29%);
+    color: white;
+    min-height: 200px;
+}
+
+#content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-border {
+    margin: 10px;
+    border-radius: .25rem;
+    padding: 3px;
+    background: linear-gradient(45deg, #ff00ff, #1aecff);
+}
+
+#spinner {
+    height: 500px;
+}
+
+.gradient-bg:hover {
+    background: linear-gradient(45deg, #ff00ff, #1aecff);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.about h1 {
+    color: #4AF626;
+    padding: 0;
+    max-width: 350px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about img {
+    height: 340px;
+    width: 340px;
+    border-radius: 100%;
+}
+
+.profile-img-border {
+    height: fit-content;
+    border-radius: 100%;
+    background: linear-gradient(45deg, #ff00ff, #1aecff);
+    margin: 0 50px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about p {
+    color: #4AF626;
+    margin-top: 40px;
+    font-size: 1.2em;
+    width: 15.2em;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15.2em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+pre {
+    color: #4AF626;
+}
+
+.coin-img {
+    width: 100px;
+    height: auto;
+}
+
+.coin-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.checkbox {
+    background-color: #583d74;
+}
+
+.checkbox:checked {
+    background-color: #798aff;
+    border-color: #798aff;
+}
+
+.spinner-small {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    height: 40px;
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+}
+
+.coin-option:hover {
+    background: linear-gradient(45deg, #ff00ff, #1aecff);
+}
+
+li {
+    border: none!important;
+}
+
+.header {
+    padding: 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-purple">
+            <div class="col header">
+                <nav>
+                    <h1>CryptoCat</h1>
+                    <img src="assets/neko.png">
+                </nav>
+            </div>
+        </div>
+
+        <div class="row bg-purple px-3">
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-light" onclick="showCurrencies()">Home</button>
+                <button type="button" class="btn btn-outline-light" onclick="fetchCoinPrice()" id="liveReportsButton">Live Reports</button>
+                <button type="button" class="btn btn-outline-light" onclick="about()">About</button>
+            </div>
+
+            <div class="col-auto search">
+                <input type="text" id="searchInput" placeholder="Search..." />
+                <button type="button" class="btn btn-outline-light" onclick="search()">Search</button>
+            </div>
+        </div>
+
+        <div class="row bg-purple">
+            <div class="col" id="content"></div>
+        </div>
+
+        <div class="modal fade" id="coinModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-purple">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Live reports requires up to 5 coins</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body" class="list-group">
+                        <p>Please choose which coin to replace with <strong class='extra-coin'></strong></p>
+                    </div>
+
+                    <ul id='modalCoinList' class="bg-purple"></ul>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark gradient-bg" data-bs-dismiss="modal">Dismiss <strong
+                                class='extra-coin'></strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+</body>
+
+</html>
