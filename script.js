@@ -1,6 +1,6 @@
 let selectedCoins = [];
 let liveReportInterval;
-const maxNumberOfCoins = 100; // undefined = unlimited
+const maxNumberOfCoins = undefined; // undefined = unlimited
 
 const searchInput = document.getElementById('searchInput');
 
